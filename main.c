@@ -23,6 +23,11 @@ int main()
             Beep(610,500);
             printf("invalid pin!!!");
         }
+        count++;
+        if(count==4 && pin!=enteredpin)
+        {
+            exit(0);
+        }
     }
 
     return 0;
