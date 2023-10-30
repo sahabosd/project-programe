@@ -29,6 +29,12 @@ int main()
             exit(0);
         }
     }
+       printf("\n\t\t\t===================*Available Transactions*===================");
+       printf("\n\n\t\t1.withdraw1");
+       printf("\n\t\t2.Deposit");
+       printf("\n\t\t3.Check Balance");
+
+
 
     return 0;
 }
