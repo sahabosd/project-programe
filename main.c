@@ -33,6 +33,32 @@ int main()
        printf("\n\n\t\t1.withdraw1");
        printf("\n\t\t2.Deposit");
        printf("\n\t\t3.Check Balance");
+       printf("\n\n\tplease select the option:");
+       scanf("%d",&option);
+       switch(option)
+       {
+       case 1:
+        while(amount%500!=0)
+        {
+            printf("\n\t\tEnter the amount:");
+            scanf("%d",&amount);
+            if(amount%500!=0)
+                printf("\n\t The amount should be multiple of 500");
+        }
+        if(balance<amount)
+        {
+            printf("\n\t Sorry insufficient balance");
+            amount = 1;
+            break;
+        }
+        else
+        {
+            balance -=amount;
+            printf("\n\t\tYou have withdrawn Rs.%d.Your new balance is %.2f",amount,balance);
+            amount=1;
+            break;
+        }
+       }
 
 
 
