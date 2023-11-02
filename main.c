@@ -55,9 +55,18 @@ int main()
         {
             balance -=amount;
             printf("\n\t\tYou have withdrawn Rs.%d.Your new balance is %.2f",amount,balance);
+            printf("\n\t\t\t===================*Thank you for using ATM BANKING*===================");
             amount=1;
             break;
         }
+       case 2:
+        printf("\n\t\t please enter the amount:");
+        scanf("%d",&amount);
+        balance +=amount;
+        printf("\n\t\tYou have deposited Rs.%d.Your new balance is %.2f",amount,balance);
+        printf("\n\t\t\t=====================*Thank you for using ATM BANKING*=====================");
+        amount =1;
+        break;
        }
 
 
