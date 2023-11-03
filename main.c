@@ -29,6 +29,8 @@ int main()
             exit(0);
         }
     }
+    while(continueTransaction !=0)
+    {
        printf("\n\t\t\t===================*Available Transactions*===================");
        printf("\n\n\t\t1.withdraw1");
        printf("\n\t\t2.Deposit");
@@ -67,9 +69,20 @@ int main()
         printf("\n\t\t\t=====================*Thank you for using ATM BANKING*=====================");
         amount =1;
         break;
+       case 3:
+        printf("\n\t\tYour balance is Rs.%.2f",balance);
+        printf("\n\t\t\t=====================*Thank you for using ATM BANKING SYSTEM*=====================");
+        break;
+       default:
+        Beep(610,500);
+        printf("\n\t\tInvalid Option!!!");
        }
+       printf("\n\t\tDo you want to perform another transaction? press 1[yes],0[no]");
+       scanf("%d",&continueTransaction);
 
 
+
+      }
 
     return 0;
 }
