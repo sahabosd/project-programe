@@ -2,8 +2,10 @@
 #include <stdlib.h>
 #include<windows.h>
 #include<time.h>
+#include"splash.h"
 
-int main()
+
+int main(void)
 {
     system("color 3F");
     int pin=18457,option,enteredpin,count=0,amount=1;

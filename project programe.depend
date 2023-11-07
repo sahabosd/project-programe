@@ -1,7 +1,10 @@
 # depslib dependency file v1.0
-1699017190 source:c:\users\hp\onedrive\desktop\project\project programe\main.c
+1699380403 source:c:\users\hp\onedrive\desktop\project\project programe\main.c
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
 	<time.h>
+	"splash.h"
+
+1699380453 c:\users\hp\onedrive\desktop\project\project programe\splash.h
 
